@@ -1,0 +1,16 @@
+.bbGalleryPic {
+  width: 450px; /* Default width */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .bbGalleryPic {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .bbGalleryPic {
+      width: 500px; /* 500px width on larger screens */
+  }
+}
