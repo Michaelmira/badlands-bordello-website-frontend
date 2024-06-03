@@ -1,5 +1,8 @@
 {
   "name": "my-app",
+  "engines": {
+    "node": "20.13.1"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
