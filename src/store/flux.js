@@ -14,7 +14,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			logIn: async (body) => {
 				const response = await fetch(
-					process.env.BACKEND_URL + "/api/log-ins", {
+					process.env.REACT_APP_API_KEY + "/api/log-ins", {
 						method: "POST",
 						body: JSON.stringify(body),
 						headers: {
@@ -44,7 +44,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			fetchPrivateEndpoint: async () => {
 				const store = getStore();
 				const response = await fetch(
-					process.env.BACKEND_URL + "/api/private", {
+					process.env.REACT_APP_API_KEY + "/api/private", {
 						headers: {
 							"Content-type": "application/json",
 							"Authorization": "Bearer " + store.token
@@ -70,7 +70,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getMessage: async () => {
 				try{
 					// fetching data from the backend
-					const resp = await fetch(process.env.BACKEND_URL + "/api/hello")
+					const resp = await fetch(process.env.REACT_APP_API_KEY + "/api/hello")
 					const data = await resp.json()
 					setStore({ message: data.message })
 					// don't forget to return something, that is how the async resolves
@@ -97,7 +97,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			processQuestionnaire: async (questionnaire) => {
 				const response = await fetch(
-					process.env.BACKEND_URL + "/api/questionnaire",{
+					process.env.REACT_APP_API_KEY + "/api/questionnaire",{
 						method: "POST",
 						body: JSON.stringify({full_name: questionnaire.full_name, phone_number: questionnaire.phone_number, burner_email: questionnaire.burner_email, campers: questionnaire.campers, space_required: questionnaire.space_required, leader_question: questionnaire.leader_question, camp_donation: questionnaire.camp_donation, early_arrival: questionnaire.early_arrival, why_go: questionnaire.why_go }),
 						headers: {
@@ -114,7 +114,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			getAllQuestionnaires: async () => {
 
-				const response = await fetch(process.env.BACKEND_URL + "/api/questionnaires",{
+				const response = await fetch(process.env.REACT_APP_API_KEY + "/api/questionnaires",{
 					method: "GET",
 					headers: {
 						"Content-Type": "application/json",
