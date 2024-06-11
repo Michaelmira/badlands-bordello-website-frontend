@@ -62,7 +62,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					token: undefined
 				});
 				if (localStorage.getItem("token")) {
-					localStorage.reomoveItem("token");
+					localStorage.removeItem("token");
 				}
 				console.log(getStore().token)
 			},
