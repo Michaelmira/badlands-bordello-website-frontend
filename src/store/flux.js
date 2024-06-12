@@ -113,18 +113,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			getAllQuestionnaires: async () => {
-
-				const response = await fetch(process.env.REACT_APP_API_KEY + "/api/questionnaires",{
+				const store = getStore(); // Retrieve the current store state
+				const response = await fetch(process.env.REACT_APP_API_KEY + "/api/questionnaires", {
 					method: "GET",
 					headers: {
 						"Content-Type": "application/json",
-						Authorization: "Bearer " + store.token
+						"Authorization": "Bearer " + store.token
 					},
-				})
+				});
 				if (response.status !== 200) return false;
-				const responseBody = await response.json()
-				console.log(responseBody)
-				setStore({ questionnaires: responseBody});
+				const responseBody = await response.json();
+				console.log(responseBody);
+				setStore({ questionnaires: responseBody });
 				return true;
 			}
 
