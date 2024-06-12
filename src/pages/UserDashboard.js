@@ -6,29 +6,16 @@ export const UserDashboard = ({questionnaire}) => {
     const {store, actions} = useContext(Context);
     const navigate = useNavigate();
 
-    // const [questionnaire, setQuestionnaire] = useState({
-    //     burner_email: "",
-    //     camp_donation: "",
-    //     campers: "",
-    //     early_arrival: "",
-    //     id: "",
-    //     leader_question: "",
-    //     phone_number: "",
-    //     space_required: "",
-    //     why_go: ""
-    // })
-
-
 
     useEffect(() => {
         actions.getAllQuestionnaires()
     }, []);
 
-    // useEffect(() => {
-    //     if ( !store.token ) {
-    //         navigate("/log-in");
-    //     }
-    // }, [store.token, navigate]);
+    useEffect(() => {
+        if ( !store.token ) {
+            navigate("/log-in");
+        }
+    }, [store.token, navigate]);
     
     return (
         <div className="text-light">
