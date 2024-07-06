@@ -174,10 +174,10 @@ export const CampQuestionnaire = () => {
 										onChange={(event) => setCamp_donation(event.target.value)}
 									>
 										<option  selected>Pick a Option</option>
-										<option value="value1">Early Arrival, Build, Strike 350$</option>
-										<option value="value2">Early Arrival, Build, NO STRIKE 450$</option>
-										<option value="value3">Strike ONLY 450$</option>
-										<option value="value3">NO WORK 550$</option>
+										<option value="value1">250$</option>
+										<option value="value2">250$</option>
+										<option value="value3">250$</option>
+										<option value="value3">250$</option>
 									</select>
 							</div>
 							<div className="col-md-3 col-sm-6 ">
