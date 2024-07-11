@@ -32,14 +32,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 				return true;
 			},
 
-			checkIfTokenInLocalStorage: () => {
-				if (localStorage.getItem("token")){
-					setStore({
-						token: localStorage.getItem("token")
-					});
-				}
-					// localStorageChecked: true
-			},
+			// checkIfTokenInLocalStorage: () => {
+			// 	if (localStorage.getItem("token")){
+			// 		setStore({
+			// 			token: localStorage.getItem("token")
+			// 		});
+			// 	}
+			// 		// localStorageChecked: true
+			// },
 
 			fetchPrivateEndpoint: async () => {
 				const store = getStore();
