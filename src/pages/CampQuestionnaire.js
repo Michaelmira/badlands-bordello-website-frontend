@@ -37,12 +37,12 @@ export const CampQuestionnaire = () => {
 
 	return (
     
-		<div className="container bg-dark py-5">
+		<div className="container py-5">
 			<form >
-				<div className="card text-dark border-0 " style={{ color: "#000000", backgroundColor: "#575757" }} >
+				<div className="card text-dark border-0 "  >
 				{/* <!-- Header --> */}
 					<div className="card-header" style={{ height: "70px", backgroundColor: "#000000", backgroundImage: 'url("https://www.transparenttextures.com/patterns/wood-pattern.png")' }} >
-						<h1 className="fs-4" style={{ color: "#828282" }} ><strong>Badlands Bordello Camper Application</strong></h1>
+						<h1 className="fs-4"  ><strong>Badlands Bordello Camper Application</strong></h1>
 					</div>
 					{/* <!-- Header -->
 					<!-- Danger Alert --> */}
@@ -61,7 +61,7 @@ export const CampQuestionnaire = () => {
 									<div className="input-group mb-3">
 										<input 
 											type="full_name"
-											style={{backgroundColor: "#000000"}} 
+											 
 											className="form-control text-light border-0" 
 											placeholder="First, Last." 
 											value={full_name}
@@ -78,7 +78,7 @@ export const CampQuestionnaire = () => {
 											type="text" 
 											name="phone" 
 											id="phone" 
-											style={{backgroundColor: "#000000"}} 
+											 
 											className="form-control border-0 text-light" 
 											placeholder="(000)000-0000" 
 											aria-label="Recipient's username" 
@@ -98,7 +98,7 @@ export const CampQuestionnaire = () => {
 										name="email-address" 
 										id="email-address" 
 										className="form-control border-0 text-light" 
-										style={{backgroundColor: "#000000"}} 
+										 
 										placeholder="Burner Email" 
 										aria-label="Recipient's username" 
 										aria-describedby="basic-addon2" 
@@ -119,7 +119,7 @@ export const CampQuestionnaire = () => {
 								<input 
 									type="text" 
 									className="form-control border-0 text-light " 
-									style={{backgroundColor: "#000000"}} 
+									 
 									name="campers" 
 									id="campers" 
 									aria-label="Recipient's username" 
@@ -133,7 +133,7 @@ export const CampQuestionnaire = () => {
 								<input 
 									type="text" 
 									className="form-control border-0 text-light " 
-									style={{backgroundColor: "#000000"}} 
+									 
 									name="space" 
 									id="space" 
 									aria-label="Recipient's username" 
@@ -154,7 +154,7 @@ export const CampQuestionnaire = () => {
 								<input 
 									type="text" 
 									className="form-control border-0 text-light " 
-									style={{backgroundColor: "#000000"}}  
+									  
 									name="leader" 
 									id="leader" 
 									aria-label="Recipient's username" 
@@ -187,7 +187,7 @@ export const CampQuestionnaire = () => {
 									name="early" 
 									id="early" 
 									className="form-control border-0 text-light " 
-									style={{backgroundColor: "#000000"}} 
+									 
 									placeholder="Yes 3 Friday Aug 23rd or No"  
 									aria-label="Recipient's username" 
 									aria-describedby="basic-addon2"
@@ -219,7 +219,7 @@ export const CampQuestionnaire = () => {
 									name="why-do-you-want-to-go" 
 									id="why" 
 									className="comments form-control border-0 text-light " 
-									style={{backgroundColor: "#000000"}} 
+									 
 									rows="4"
 									value={why_go}
 									onChange={(event) => setWhy_go(event.target.value)}
@@ -234,9 +234,9 @@ export const CampQuestionnaire = () => {
 					<!-- Footer  --> */}
 					<div className="container pb-2 border-0" style={{ height: "70px", backgroundColor: "#000000", backgroundImage: 'url("https://www.transparenttextures.com/patterns/wood-pattern.png")' }}>
 						<div className="d-grid gap-2 d-md-flex justify-content-md-end pt-2">
-							<button style={{ backgroundColor: "#575757" }} className="btn text-black mt-2 mr-2 me-md-2" type="button">Cancel</button>
+							<button  className="btn text-black mt-2 mr-2 me-md-2" type="button">Cancel</button>
 							<button 
-							style={{ backgroundColor: "#575757" }} 
+							 
 							className="btn text-black mt-2 mr-2 " 
 							type="button"
 							onClick={handleProcessQuestionnaire}

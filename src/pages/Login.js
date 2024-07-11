@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
     const navigate = useNavigate();
-    const { store, actions } = useContext(Context);
+    const { actions } = useContext(Context);
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const handleLogin = async(event) => {
@@ -32,7 +32,7 @@ export const Login = () => {
 		<div className="container pt-5 ">
             {/* Apply animation classes based on formVisible state */}
             <div className={`row justify-content-center animate__animated ${formVisible ? 'animate__fadeIn' : 'animate__fadeOut'}`} style={{ animationDuration: '0.5s' }}>
-                <div className="col-md-6" style={{ opacity: formVisible ? '1' : '0' }}>
+                <div className="col-md-6 pb-5" style={{ opacity: formVisible ? '1' : '0' }}>
                     <div style={{ backgroundColor: '#fff', padding: '20px', borderRadius: '10px', boxShadow: '0px 0px 50px rgba(0, 0, 0, 0.2)' }}>
                         <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Login</h2>
                         <div style={{ marginBottom: '20px' }}>

@@ -7,20 +7,20 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light" style={{ height: "70px", backgroundColor: "#000000", backgroundImage: 'url("https://www.transparenttextures.com/patterns/wood-pattern.png")' }} >
 			<div className="container">
-				<Link to="/" style={{ textDecoration: 'none', textDecorationColor: 'black' }} >
-					<h1 className="navbar-brand mb-0" style={{textDecoration: 'none', color: "#828282" }} ><strong>Badlands Bordello</strong></h1>
+				<Link to="/" style={{ textDecoration: 'none' }} >
+					<h1 className="navbar-brand mb-0 text-light" ><strong>Badlands Bordello</strong></h1>
 				</Link>
-				<div className="ml-auto">
+				<div className="ml-auto text-light ">
 					<Link to="/donate">
-						<button className="btn border-0 mx-3 text-black btn-sm btn-md-md btn-lg-lg" style={{ backgroundColor: "#575757" }} >Donate</button>
+						<button className="btn bg-light btn-md border shadow btn-md-md px-2 mx-2 " >Donate</button>
 					</Link>
 					{store.token ? (
-                        <button onClick={(e) => actions.logUserOut()} style={{ backgroundColor: "#575757" }} >
+                        <button onClick={(e) => actions.logUserOut()} >
                             Log out
                         </button>
                     ) : (
                         <Link to="/log-in">
-                            <button className="btn border-0 text-black btn-sm btn-md-md btn-lg-lg" style={{ backgroundColor: "#575757" }} >Log in</button>
+                            <button className="btn bg-light btn-md border shadow btn-md-md px-2 mx-2 "  >Log in</button>
                         </Link>
                     )}
 				</div>
