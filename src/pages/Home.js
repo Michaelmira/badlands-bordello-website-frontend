@@ -7,11 +7,11 @@ export const Home = () => (
 	<>
 		<div className="container-flex   p-0" >
 			<ul className="nav nav-tabs d-flex border-0 justify-content-center" id="myTab" role="tablist">
-				<li className="nav-item text-black" role="presentation">
-					<button className="nav-link text-black active" id="question-tab" data-bs-toggle="tab" data-bs-target="#question" type="button" role="tab" aria-controls="question" aria-selected="true">Home</button>
+				<li className="nav-item shadow-sm text-black" role="presentation">
+					<button className="nav-link shadow-sm text-black active" id="question-tab" data-bs-toggle="tab" data-bs-target="#question" type="button" role="tab" aria-controls="question" aria-selected="true">Home</button>
 				</li>
-				<li className="nav-item text-black" role="presentation">
-					<button className="nav-link text-black" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="false">Gallery</button>
+				<li className="nav-item shadow-sm text-black" role="presentation">
+					<button className="nav-link text-black shadow-sm" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="false">Gallery</button>
 				</li>
 			</ul>
 			<div className="tab-content" id="myTabContent">

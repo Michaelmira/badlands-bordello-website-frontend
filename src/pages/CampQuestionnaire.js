@@ -39,10 +39,10 @@ export const CampQuestionnaire = () => {
     
 		<div className="container py-5">
 			<form >
-				<div className="card text-dark border-0 "  >
+				<div className="card border-2 shadow-lg "  >
 				{/* <!-- Header --> */}
 					<div className="card-header" style={{ height: "70px", backgroundColor: "#000000", backgroundImage: 'url("https://www.transparenttextures.com/patterns/wood-pattern.png")' }} >
-						<h1 className="fs-4"  ><strong>Badlands Bordello Camper Application</strong></h1>
+						<h1 className="fs-4 text-light"  ><strong>Badlands Bordello Camper Application</strong></h1>
 					</div>
 					{/* <!-- Header -->
 					<!-- Danger Alert --> */}
@@ -56,13 +56,13 @@ export const CampQuestionnaire = () => {
 					<div className="container">
 						<div className="row">
 							<div className="col-md-5">
-								<div className="card-text text-black " ><strong>Full Name</strong></div>
+								<div className="card-text  " ><strong>Full Name</strong></div>
 								<div className="row">
 									<div className="input-group mb-3">
 										<input 
 											type="full_name"
 											 
-											className="form-control text-light border-0" 
+											className="form-control border-dark border-2 " 
 											placeholder="First, Last." 
 											value={full_name}
 											onChange={(event) => setFull_name(event.target.value)}
@@ -73,13 +73,13 @@ export const CampQuestionnaire = () => {
 							<div className="col-md-3 col-sm-6">
 								<div className="text-black " ><strong> Phone Number </strong></div>
 								<div className="row">
-									<div className="input-group mb-3">
+									<div className="input-group mb-3 ">
 										<input 
 											type="text" 
 											name="phone" 
 											id="phone" 
 											 
-											className="form-control border-0 text-light" 
+											className="form-control border-dark border-2" 
 											placeholder="(000)000-0000" 
 											aria-label="Recipient's username" 
 											aria-describedby="basic-addon2" 
@@ -97,7 +97,7 @@ export const CampQuestionnaire = () => {
 										type="text" 
 										name="email-address" 
 										id="email-address" 
-										className="form-control border-0 text-light" 
+										className="form-control border-dark border-2 " 
 										 
 										placeholder="Burner Email" 
 										aria-label="Recipient's username" 
@@ -115,10 +115,10 @@ export const CampQuestionnaire = () => {
 					<div className="container">
 						<div className="row">
 							<div className="col-md-6">
-								<div className= "pb-2 text-black" ><strong>Names Of Campers In Your Dwelling</strong></div>
+								<div className= "pb-2 " ><strong>Names Of Campers In Your Dwelling</strong></div>
 								<input 
 									type="text" 
-									className="form-control border-0 text-light " 
+									className="form-control border-dark border-2  " 
 									 
 									name="campers" 
 									id="campers" 
@@ -132,7 +132,7 @@ export const CampQuestionnaire = () => {
 								<div className="pb-2 text-black"><strong>Space requirement for Dwelling, Cars, RV, Etc.</strong></div>
 								<input 
 									type="text" 
-									className="form-control border-0 text-light " 
+									className="form-control border-dark border-2  " 
 									 
 									name="space" 
 									id="space" 
@@ -150,10 +150,10 @@ export const CampQuestionnaire = () => {
 					<div className="container">
 						<div className="row">
 							<div className="col-md-6">
-								<div className="pb-2 pt-2 text-black "><strong>Would you like to sign up as a leader? Or create and decorate your own themed 10" by 8" or 10" by 20" Sideroom connected to main venue.</strong></div>
+								<div className="pb-2 pt-2 "><strong>Would you like to sign up as a leader? Or create and decorate your own themed 10" by 8" or 10" by 20" Sideroom connected to main venue.</strong></div>
 								<input 
 									type="text" 
-									className="form-control border-0 text-light " 
+									className="form-control border-dark border-2  " 
 									  
 									name="leader" 
 									id="leader" 
@@ -164,12 +164,11 @@ export const CampQuestionnaire = () => {
 								/>
 							</div>
 							<div className="col-md-3 col-sm-6  pt-2">
-								<label for="Camp Mandatory Donation" name="arrivalDonation" className="form-label border-0 text-black " ><strong>Camp Manditory Donation Per/Human</strong></label>
+								<label for="Camp Mandatory Donation" name="arrivalDonation" className="form-label  " ><strong>Camp Manditory Donation Per/Human</strong></label>
 									<select 
 										name="arrival-strike" 
 										id="arrivalDonation" 
-										className="form-select border-0" 
-										style={{color: "#575757", backgroundColor: "#000000"}}
+										className="form-select border-dark border-2"
 										value={camp_donation}
 										onChange={(event) => setCamp_donation(event.target.value)}
 									>
@@ -186,7 +185,7 @@ export const CampQuestionnaire = () => {
 									type="text" 
 									name="early" 
 									id="early" 
-									className="form-control border-0 text-light " 
+									className="form-control border-dark border-2  " 
 									 
 									placeholder="Yes 3 Friday Aug 23rd or No"  
 									aria-label="Recipient's username" 
@@ -199,10 +198,10 @@ export const CampQuestionnaire = () => {
 					</div>
 					{/* <!-- Leader, Donation, Early arrival START -->
 					<!--We accept: and Message:--> */}
-					<div className="container pt-2 pb-3"> 
+					<div className="container pt-2 pb-3 "> 
 						<div className="row">
 							<div className="col-md-6">
-								<div className="col-6">
+								<div className="col-6 ">
 									<p className="pt-2 text-black "> <strong>Mandatory Donations</strong> </p>
 									<p className=" text-black "> 2 Handles, 4 Chasers for Bar </p>
 									<p className=" text-black " > 5 Gallons water for Bar </p>
@@ -218,7 +217,7 @@ export const CampQuestionnaire = () => {
 									<textarea 
 									name="why-do-you-want-to-go" 
 									id="why" 
-									className="comments form-control border-0 text-light " 
+									className="comments form-control border-dark border-2  " 
 									 
 									rows="4"
 									value={why_go}
@@ -234,10 +233,10 @@ export const CampQuestionnaire = () => {
 					<!-- Footer  --> */}
 					<div className="container pb-2 border-0" style={{ height: "70px", backgroundColor: "#000000", backgroundImage: 'url("https://www.transparenttextures.com/patterns/wood-pattern.png")' }}>
 						<div className="d-grid gap-2 d-md-flex justify-content-md-end pt-2">
-							<button  className="btn text-black mt-2 mr-2 me-md-2" type="button">Cancel</button>
+							<button  className="btn btn-light  border-dark border-2  mt-2 mr-2 me-md-2" type="button">Cancel</button>
 							<button 
 							 
-							className="btn text-black mt-2 mr-2 " 
+							className="btn btn-light mt-2 mr-2 " 
 							type="button"
 							onClick={handleProcessQuestionnaire}
 							>Submit</button>
